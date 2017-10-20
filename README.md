@@ -26,12 +26,12 @@
 |31_9_IES Light|IES ライトのサンプル|
 |32_Physics|物理アニメーションのサンプル。タップすると球が出現し落下する|
 |35_ContactDelegate|球体が地面に着くと ContactDelegate　が動作し級の色が変わる。画面タップで元の位置に戻る|
-|36_2_Particle|炎の scnp ファイルを設置しパーティクルのアニメーションを行う|
-|36_2_Particle_Geometry|ジオメトリにパーティクルエミッターに設定する|
+|36_2_Particle|炎の scnp ファイルを設置しパーティクルのアニメーションを行う|
+|36_2_Particle_Geometry|ジオメトリにパーティクルエミッターに設定する|
 |40_SKVideoNode|SpriteKit のシーンにビデオのノードを設定し、そのシーンを SceneKit のノードへ適応させるサンプル|
 |49_Tessellation|サブディビジョンサーフェイスとテッセレーションのサンプル。ピンチイン・アウトでジオメトリのトポロジーが変化する|
 |52_CIFilter|ノードに Core Image のフィルターを設定する|
-|54_4_Shader1|シェーダースニペットで Geometry を設定する|
+|54_4_Shader1|シェーダースニペットで Geometry を設定する|
 |54_5_Shader2|シェーダースニペットで Surface を設定する|
 |54_6_Shader3|シェーダースニペットで Lighting modelを設定する|
 |54_7_Shader4|シェーダースニペットで Fragment を設定する|
