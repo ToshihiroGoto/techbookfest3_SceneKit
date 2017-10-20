@@ -16,6 +16,7 @@ class GameViewController: UIViewController {
         // カメラ
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
+        cameraNode.camera?.zNear = 0.01
         cameraNode.position = SCNVector3(x: 0, y: 0.3, z: 3)
         scene.rootNode.addChildNode(cameraNode)
         
@@ -39,7 +40,7 @@ class GameViewController: UIViewController {
         
         // カメラコントロールの変更
         scnView.defaultCameraController.pointOfView = cameraNode
-        scnView.defaultCameraController.interactionMode = .fly
+        scnView.defaultCameraController.interactionMode = .truck
         
     }
     

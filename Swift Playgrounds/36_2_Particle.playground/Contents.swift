@@ -34,7 +34,6 @@ class GameViewController: UIViewController {
         scene.rootNode.addChildNode(ambientLightNode)
         
         let particle = SCNParticleSystem(named: "Fire.scnp", inDirectory: "")!
-        particle.emitterShape = SCNSphere(radius: 3)
         
         let particleNode = SCNNode()
         particleNode.addParticleSystem(particle)

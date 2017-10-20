@@ -23,33 +23,24 @@ class GameViewController: UIViewController {
         let intensity:Float = 0.2
         
         for i in 0..<10 {
-            for j in 0..<2 {
-                let node = SCNNode()
-                let geometry = SCNSphere(radius: 0.075)
-                geometry.firstMaterial?.lightingModel = .physicallyBased
-                geometry.firstMaterial?.diffuse.contents = UIColor.white
-                geometry.firstMaterial?.metalness.contents = UIColor.white
-                geometry.firstMaterial?.metalness.intensity = CGFloat(intensity * Float(i))
-                
-                geometry.firstMaterial?.roughness.contents = UIColor.white
-                geometry.firstMaterial?.roughness.intensity = CGFloat(0.7 * Float(j))
+            let node = SCNNode()
+            let geometry = SCNSphere(radius: 0.075)
+            geometry.firstMaterial?.lightingModel = .physicallyBased
+            geometry.firstMaterial?.diffuse.contents = UIColor.white
+            geometry.firstMaterial?.metalness.contents = UIColor.white
+            geometry.firstMaterial?.metalness.intensity = CGFloat(intensity * Float(i))
             
-                node.geometry = geometry
-                node.position = SCNVector3(
-                    CGFloat(basePos + (pos * Float(i))), 
-                    CGFloat(-pos * Float(j)), 
-                    0
-                )
-            
-                scene.rootNode.addChildNode(node)
-            }
+            node.geometry = geometry
+            node.position = SCNVector3(CGFloat(basePos + (pos * Float(i))), 0, 0)
+        
+            scene.rootNode.addChildNode(node)
         }
         
         // Visual Property の名前
         let textNode = SCNNode()
         let text = SCNText()
         text.flatness = 0
-        text.string = "Metalness + Roughness"
+        text.string = "Metalness"
         
         textNode.geometry = text
         textNode.position = SCNVector3(-1, 0.1, 0)

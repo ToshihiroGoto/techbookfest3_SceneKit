@@ -19,14 +19,14 @@ class GameViewController: UIViewController {
         cameraNode.position = SCNVector3(x: 2.325, y: 1.414, z: 2.399)
         cameraNode.eulerAngles = SCNVector3(x: -0.125 * Float.pi, y: 0.25 * Float.pi, z: 0)
         scene.rootNode.addChildNode(cameraNode)
-    
+        
         o1 = scene.rootNode.childNode(withName: "o", recursively: false)!
         
         let a2 = CABasicAnimation.init(keyPath: "morpher.weights[0]")
         a2.fromValue = 0.0
         a2.toValue = 1.0
-        a2.duration = 0.5
-        a2.beginTime = 1.0
+        a2.duration = 2.0
+        a2.beginTime = 0.0
         a2.autoreverses = true
         a2.repeatCount = .infinity
         
