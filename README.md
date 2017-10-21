@@ -29,6 +29,7 @@
 |36_2_Particle|炎の scnp ファイルを設置しパーティクルのアニメーションを行う|
 |36_2_Particle_Geometry|ジオメトリにパーティクルエミッターに設定する|
 |40_SKVideoNode|SpriteKit のシーンにビデオのノードを設定し、そのシーンを SceneKit のノードへ適応させるサンプル|
+|47_SSAO|スクリーンスペースアンビエントオクルージョンのサンプル。screenSpaceAmbientOcclusionIntensity や screenSpaceAmbientOcclusionRadius を変更すると影のかかり具合が変わります|
 |49_Tessellation|サブディビジョンサーフェイスとテッセレーションのサンプル。ピンチイン・アウトでジオメトリのトポロジーが変化する|
 |52_CIFilter|ノードに Core Image のフィルターを設定する|
 |54_4_Shader1|シェーダースニペットで Geometry を設定する|
